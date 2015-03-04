@@ -10,6 +10,9 @@
     },
     "require": {
         "yiisoft/yii2": "*",
-		"bower-asset/jquery.countdown": "*"
+	"bower-asset/jquery.countdown": "*"
+    },
+    "autoload": {
+        "psr-4": { "russ666\\widgets\\": "" }
     }
 }
