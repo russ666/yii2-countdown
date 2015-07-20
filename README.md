@@ -1,3 +1,15 @@
+Installation
+================
+
+download
+-----------------------
+Download [latest version](https://github.com/russ666/yii2-countdown/releases/latest)
+
+composer
+-----------------------
+add this line to your composer.json
+`"russ666/yii2-countdown": "*"`
+
 Usage
 ================
 
