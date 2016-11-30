@@ -15,7 +15,7 @@ Usage
 
 ```php
 echo \russ666\widgets\Countdown::widget([
-    'datetime' => date('Y-m-d H:i:s', time() + 1000),
+    'datetime' => date('Y-m-d H:i:s O', time() + 1000),
     'format' => '%M:%S',
     'events' => [
         'finish' => 'function(){location.reload()}',
@@ -28,7 +28,7 @@ Params
 
 datetime
 -----------------------
-Datetime string to countdown
+Datetime string to countdown. Must be added with timezone, to prevent client-server timezone difference issue.
 
 format
 -----------------------
