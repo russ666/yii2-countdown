@@ -31,6 +31,11 @@ class Countdown extends Widget
     public $options = [];
 
     /**
+     * @var string
+     */
+    public $tagName = 'span';
+
+    /**
      * @inheritdoc
      */
     public function init()
@@ -55,7 +60,7 @@ class Countdown extends Widget
         if (Yii::$app->request->isAjax)
             $script = Html::tag('script', $this->renderScript());
 
-        return Html::tag('span', '', $this->options) . $script;
+        return Html::tag($this->tagName, '', $this->options) . $script;
     }
 
     /**
