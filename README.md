@@ -15,8 +15,10 @@ Usage
 
 ```php
 echo \russ666\widgets\Countdown::widget([
+    'id' => 'some-id',
     'datetime' => date('Y-m-d H:i:s O', time() + 1000),
-    'format' => '%M:%S',
+    'format' => '\<span style=\"background: red\"\>%M</span>:%S',
+    'tagName' => 'span',
     'events' => [
         'finish' => 'function(){location.reload()}',
     ],
@@ -25,6 +27,10 @@ echo \russ666\widgets\Countdown::widget([
 
 Params
 ================
+
+id
+-----------------------
+Container id.
 
 datetime
 -----------------------
@@ -37,6 +43,14 @@ Datetime format for widget (http://hilios.github.io/jQuery.countdown/documentati
 events
 -----------------------
 Widget events (http://hilios.github.io/jQuery.countdown/documentation.html#events)
+
+options
+-----------------------
+Container html options.
+
+tagName
+-----------------------
+Container tag name.
 
 Plugin pages
 ================
